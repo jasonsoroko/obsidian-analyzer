@@ -33,3 +33,15 @@ Examples: A simple example script demonstrates analyzing a vault path and printi
 CLI interface: The scripts/analyze_vault.py script provides a command-line interface with options for specifying the vault path, folders to analyze, and output location.
 
 Test configuration: Pytest looks for tests under the tests directory and defines several custom markers.
+
+**Notes**
+
+The project README summarizes the core capabilities and how it is structured. Lines 1‑22 describe the main analyzers, automatic linking, AI‐powered features, and CLI scripts.
+Installation guidance in the README notes that the project requires Python ≥3.8 and lists key dependencies (e.g., openai, psutil, pytest).
+These dependencies also appear in pyproject.toml under [project] and [project.optional-dependencies].
+The package exposes its main entry points in __init__.py so they can be imported directly.
+Example usage for analyzing a vault and requesting note recommendations is shown in examples/basic_usage.py.
+The command‑line interface for multi-folder analysis resides in scripts/analyze_vault.py, which prints a summary and can export Markdown and JSON reports.
+Summary
+
+The repository contains “Obsidian Analyzer,” a toolset for inspecting and improving an Obsidian vault. It analyzes folders, finds cross-folder links, computes a vault health score, and can automatically add wiki links. AI helpers detect semantic relationships between notes and locate content gaps. The project includes scripts for vault analysis, auto-linking, and safe link insertion, along with example programs and test suites. Installation requires Python 3.8 or newer and the dependencies listed in pyproject.toml. After installing, users can run the provided CLI scripts or use the Python API to analyze notes, generate reports, and safely insert suggested links.

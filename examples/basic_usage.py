@@ -5,7 +5,7 @@ from obsidian_analyzer import analyze_coding_folder, get_recommendations_for_not
 
 def main():
     # Update this path to your vault
-    vault_path = "/Users/jasonsoroko/Documents/Obsidian/Obsidian Vault"
+    vault_path = "/Users/jasonsoroko/Documents/Obsidian/Obsidian Vault/Obsidian Vault"
     
     print("🔍 Analyzing Coding folder...")
     analyzer = analyze_coding_folder(vault_path)

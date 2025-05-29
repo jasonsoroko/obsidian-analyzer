@@ -1,0 +1,40 @@
+{
+  "valid_connection": {
+    "should_link": true,
+    "relationship_type": "related_concept",
+    "explanation": "Both notes discuss Python development practices",
+    "confidence": 0.85,
+    "suggested_context": "Consider linking when discussing Python tooling"
+  },
+  "no_connection": {
+    "should_link": false,
+    "relationship_type": "none",
+    "explanation": "Notes cover unrelated topics",
+    "confidence": 0.2,
+    "suggested_context": ""
+  },
+  "bridge_gaps": [
+    {
+      "gap_type": "bridge_connection",
+      "title": "Python Testing Integration",
+      "description": "Connects testing practices with development workflow",
+      "priority": "high",
+      "confidence": 0.9,
+      "related_notes": ["Python Testing", "Development Workflow"],
+      "suggested_content": ["Test automation", "CI/CD integration"],
+      "tags": ["python", "testing", "automation"]
+    }
+  ],
+  "topic_gaps": [
+    {
+      "gap_type": "topic_coverage",
+      "title": "Advanced Python Patterns",
+      "description": "Deep dive into advanced Python programming patterns",
+      "priority": "medium",
+      "confidence": 0.75,
+      "related_notes": ["Python Basics", "Python Advanced"],
+      "suggested_content": ["Design patterns", "Metaclasses", "Decorators"],
+      "tags": ["python", "advanced", "patterns"]
+    }
+  ]
+}

@@ -58,3 +58,18 @@ Another target note.
         note1_path = Path(test_vault_path) / "Coding" / "note1.md"
         content = note1_path.read_text()
         assert "[[note2]]" not in content  # Should not be modified in dry run
+
+    def test_analyze_custom_folder(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            vault_path = Path(temp_dir)
+            docs_folder = vault_path / "Docs"
+            docs_folder.mkdir()
+
+            (docs_folder / "a.md").write_text("This mentions b note.")
+            (docs_folder / "b.md").write_text("B note content")
+
+            linker = AutoLinker(str(vault_path), backup=False)
+            suggestions = linker.analyze_and_suggest_links("Docs")
+
+            assert suggestions
+            assert "a" in suggestions

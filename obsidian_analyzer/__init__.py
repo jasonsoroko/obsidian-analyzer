@@ -2,5 +2,6 @@
 
 from .analyzer import CodingFolderAnalyzer, analyze_coding_folder, get_recommendations_for_note
 from .auto_linker import AutoLinker
+from .multi_analyzer import MultiVaultAnalyzer, VaultAnalysis, FolderStats
 
 __version__ = "0.1.0"

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-05-29T07:45:46.068104",
+  "overall_status": "HEALTHY",
+  "checks": {
+    "unit_tests": {
+      "status": "PASSED",
+      "duration": 0.12817716598510742,
+      "command": "pytest tests/unit -v"
+    },
+    "integration_tests": {
+      "status": "PASSED",
+      "duration": 0.12422013282775879,
+      "command": "pytest tests/integration -v"
+    },
+    "performance_tests": {
+      "status": "PASSED",
+      "duration": 0.11289501190185547,
+      "command": "pytest tests/integration/test_performance.py -v"
+    },
+    "module_import": {
+      "status": "PASSED",
+      "duration": 0.036898136138916016,
+      "command": "python -c 'from obsidian_analyzer import CodingFolderAnalyzer; print(\"Import OK\")'"
+    },
+    "cli_functionality": {
+      "status": "PASSED",
+      "duration": 0.04140901565551758,
+      "command": "python scripts/analyze_vault.py test_vault --output /tmp/test_report.md"
+    }
+  }
+}

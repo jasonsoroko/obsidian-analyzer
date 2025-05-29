@@ -5,3 +5,5 @@ from .auto_linker import AutoLinker
 from .multi_analyzer import MultiVaultAnalyzer, VaultAnalysis, FolderStats
 
 __version__ = "0.1.0"
+from .safe_auto_linker import SafeAutoLinker, SafetyLevel
+from .safe_auto_linker import SafeAutoLinker, SafetyLevel

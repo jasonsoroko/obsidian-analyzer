@@ -1,0 +1,27 @@
+{
+  "backup_id": "safe_backup_20250529_081006",
+  "timestamp": "20250529_081006",
+  "files": [
+    {
+      "path": "Coding/Obsidian Analyzer notes.md",
+      "hash": "e3f49fbe8fd647224a8cb71f8ad1a4473ee054aada9f48c2c3f6a4eb326aa428",
+      "size": 2179
+    },
+    {
+      "path": "Coding/The PARA-ish + MOCs System.md",
+      "hash": "8d3123353039070dc7595d9a1d2f986ba43a1d199c7d7b649a6ee24a87e9d011",
+      "size": 4836
+    },
+    {
+      "path": "Coding/Modern Python Project Setup Guide (2025).md",
+      "hash": "6d1bbc912af82aa578c8aeb35128e82fe56e3166a1c791f87f81fe6aa5ee07ef",
+      "size": 6084
+    },
+    {
+      "path": "Coding/Python Hygiene.md",
+      "hash": "c23e81c79317114a7d1d8fa74946453f7a5b976d13fa784e1ddba40fbf7368b8",
+      "size": 4848
+    }
+  ],
+  "safety_level": "conservative"
+}

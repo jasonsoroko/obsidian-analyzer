@@ -48,6 +48,7 @@ class AutoLinker:
     def analyze_and_suggest_links(self, folder_name: str = "Coding") -> Dict[str, List[LinkSuggestion]]:
         """Analyze folder and get link suggestions for all notes."""
         analyzer = CodingFolderAnalyzer(self.vault_path)
+        analyzer.coding_folder = self.vault_path / folder_name
         analyzer.load_coding_notes()
         
         if not analyzer.notes:

@@ -43,9 +43,11 @@ Another target note.
     def test_analyze_and_suggest_links(self, test_vault_path):
         linker = AutoLinker(test_vault_path, backup=False)
         suggestions = linker.analyze_and_suggest_links("Coding")
-        
+
         assert isinstance(suggestions, dict)
         # Should find suggestions for note1 mentioning note2/note3
+        assert "note1" in suggestions
+        assert any(s.target_note == "note2" for s in suggestions["note1"])
     
     def test_dry_run_mode(self, test_vault_path):
         linker = AutoLinker(test_vault_path, backup=False)
